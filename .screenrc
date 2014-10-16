@@ -1,0 +1,4 @@
+# don't display the copyright page
+startup_message off
+
+defscrollback 1000
