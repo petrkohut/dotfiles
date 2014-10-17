@@ -1,8 +1,5 @@
 #Home
 export PATH=~/bin:$PATH
-#Java 1.7 JRE
-export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
-export PATH=$JAVA_HOME/bin:$PATH
 #Grep color
 export GREP_OPTIONS="-n --color"
 #Bash Editor
