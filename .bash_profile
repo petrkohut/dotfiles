@@ -48,7 +48,7 @@ PROMPT_COMMAND="GITBRANCH"
 #Aliases
 alias r='sudo -E bash -l'
 alias ls='ls -FGA'
-alias lsa='ls -l'
+alias lsl='ls -l'
 alias proc='ps aux'
 alias ..='cd ..'
 alias ...='cd ../..'
