@@ -28,7 +28,7 @@ PS1="${UID_BG}${UID_COLOR}\u@\h ${PATH_COLOR}[\w] ${COLOR_RESET}${CHAR_COLOR}${U
 #Git branch info
 export PSORIG="$PS1"
 function GITBRANCH() {
-	branch="$(git branch 2>/dev/null | grep '*' | cut -d" " -f2-)"
+  branch="$(git branch 2>/dev/null | grep '*' | cut -d" " -f2-)"
   dirty="$(git status -s 2>/dev/null)"
   if [ -n "$dirty" ] ; then
     color="1;33m"
@@ -49,7 +49,6 @@ PROMPT_COMMAND="GITBRANCH"
 alias r='sudo -E bash -l'
 alias ls='ls -FGA'
 alias lsl='ls -l'
-alias proc='ps aux'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias subl='open -a "Sublime Text"'
@@ -61,4 +60,4 @@ alias gps='git push'
 alias gpl='git pull'
 alias gs='git status'
 alias gl='git log'
-alias gr='git clean -df;git checkout -- .'
+alias gr='git clean -df;git checkout -- .' # Discard all git changes
