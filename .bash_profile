@@ -55,9 +55,21 @@ alias subl='open -a "Sublime Text"'
 
 alias ga='git add'
 alias gc='git commit'
+alias gch='git checkout'
+alias gf='git fetch'
 alias gd='git diff HEAD .'
 alias gps='git push'
 alias gpl='git pull'
 alias gs='git status'
 alias gl='git log'
-alias gr='git clean -df;git checkout -- .' # Discard all git changes
+alias gra='git clean -df;git checkout -- .' # Discard all local changes
+
+gitBranchDeleteRemote() {
+  git branch -d -r origin/$1
+  git config --unset branch.$1.remote
+  git config --unset branch.$1.merge
+  git push origin :$1
+}
+alias gbdr=gitBranchDeleteRemote # Delete remote branch
+alias gbd='git branch -d' # Delete local branch
+alias gbc='git checkout -b' # Create new branch
