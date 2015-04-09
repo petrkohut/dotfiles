@@ -61,7 +61,7 @@ alias gd='git diff HEAD .'
 alias gps='git push'
 alias gpl='git pull'
 alias gs='git status'
-alias gl='git log'
+alias gl='git log --graph --decorate --abbrev-commit'
 alias gra='git clean -df;git checkout -- .' # Discard all local changes
 
 gitBranchDeleteRemote() {
