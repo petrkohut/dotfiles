@@ -51,7 +51,6 @@ alias ls='ls -FGA'
 alias lsl='ls -l'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias subl='open -a "Sublime Text"'
 
 alias ga='git add'
 alias gc='git commit'
