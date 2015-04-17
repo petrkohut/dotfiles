@@ -5,8 +5,10 @@ export GREP_OPTIONS="-n --color"
 #Bash Editor
 export EDITOR=vim
 export VISUAL=vim
-#Bash colors
+#BSD ls colors
 export LSCOLORS=ExGxFxdxCxegedhbagacec
+#Linux ls colors
+export LS_COLORS="di=1;34;40:ln=1;36;40:so=1;35;40:pi=33;40:ex=1;32;40:bd=34;46:cd=34;43:su=37;41:sg=0;46:tw=0;42:ow=34;42:"
 #Ignore dups in bash history
 export HISTCONTROL=ignoredups
 
@@ -47,7 +49,7 @@ PROMPT_COMMAND="GITBRANCH"
 
 #Aliases
 alias r='sudo -E bash -l'
-alias ls='ls -FGA'
+alias ls='ls -FGA --color=auto'
 alias lsl='ls -l'
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -62,7 +64,6 @@ alias gpl='git pull'
 alias gs='git status'
 alias gl='git log --graph --decorate --abbrev-commit'
 alias gda='git clean -df;git checkout -- .' # Discard all local changes
-
 gitBranchDeleteRemote() {
   git branch -d -r origin/$1
   git config --unset branch.$1.remote
