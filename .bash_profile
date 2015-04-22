@@ -49,7 +49,11 @@ PROMPT_COMMAND="GITBRANCH"
 
 #Aliases
 alias r='sudo -E bash -l'
-alias ls='ls -FGA --color=auto'
+if [[ `uname` == 'linux' ]]; then
+   alias ls='ls -FA --color=auto'
+else
+   alias ls='ls -FAG'
+fi
 alias lsl='ls -l'
 alias ..='cd ..'
 alias ...='cd ../..'
