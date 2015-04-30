@@ -75,7 +75,7 @@ gitBranchDeleteRemote() {
   git config --unset branch.$1.merge
   git push origin :$1
 }
-alias gb='git branch'
+alias gba='git branch -a'
 alias gbdr=gitBranchDeleteRemote # Delete remote branch
 alias gbd='git branch -d' # Delete local branch
 alias gbc='git checkout -b' # Create new branch
