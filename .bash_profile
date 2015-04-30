@@ -62,6 +62,7 @@ alias ga='git add'
 alias gc='git commit'
 alias gch='git checkout'
 alias gf='git fetch'
+alias grb='git rebase'
 alias gd='git diff HEAD .'
 alias gps='git push'
 alias gpl='git pull'
@@ -74,6 +75,7 @@ gitBranchDeleteRemote() {
   git config --unset branch.$1.merge
   git push origin :$1
 }
+alias gb='git branch'
 alias gbdr=gitBranchDeleteRemote # Delete remote branch
 alias gbd='git branch -d' # Delete local branch
 alias gbc='git checkout -b' # Create new branch
