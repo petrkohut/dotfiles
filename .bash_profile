@@ -68,6 +68,7 @@ alias gps='git push'
 alias gpl='git pull'
 alias gs='git status'
 alias gl='git log --graph --decorate --abbrev-commit'
+alias gr='git reset'
 alias gda='git clean -df;git checkout -- .' # Discard all local changes
 gitBranchDeleteRemote() {
   git branch -d -r origin/$1
