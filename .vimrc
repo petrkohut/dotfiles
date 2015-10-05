@@ -1,3 +1,6 @@
+" Install Vundle by this link:
+" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
 set nocompatible
 
 " History of commands
