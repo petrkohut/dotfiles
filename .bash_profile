@@ -1,7 +1,7 @@
 #Home
 export PATH=~/bin:$PATH
 #Grep color
-export GREP_OPTIONS="-n --color"
+export GREP_OPTIONS="--color"
 #Bash Editor
 export EDITOR=vim
 export VISUAL=vim
